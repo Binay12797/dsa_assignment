@@ -13,15 +13,20 @@ void push(char a)
     if(top == max_size -1)
         printf("Stack Overflow.");
     else
-        top++;
-        stack[top]=a;
+        {
+            top++;
+            stack[top]=a;
+        }
 }
 
 //pop funcion defination
 char pop()
 {
     if(top == -1)
+    {
         printf("stack is empty.");
+        return '\0';                //will be important later on
+    }
     else
         return stack[top--]; // top must be reduced after pop as an element is removed
 }
@@ -62,9 +67,13 @@ void check( char exp[])
         }
     }
 
+    if(top!=-1)
+        {
+            printf("Given mathematical expression dosent has balanced number of parentheses");
+            return;
+        }
+    
     printf("Given mathematical expression has balanced number of parentheses");
-    return;
-
 }
 
 int main()

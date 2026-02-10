@@ -1,2 +1,1 @@
-#Write a program to check if any given mathematical expression has a balanced number of
-parentheses or not?
+#Write a program to check if any given mathematical expression has a balanced number of parentheses or not?
