@@ -69,7 +69,7 @@ void check( char exp[])
 
     if(top!=-1)
         {
-            printf("Given mathematical expression dosent has balanced number of parentheses");
+            printf("Given mathematical expression dosent have balanced number of parentheses");
             return;
         }
     
