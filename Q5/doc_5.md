@@ -40,7 +40,7 @@ For an undirected graph, every edge `(u, v)` must be recorded **symmetrically**:
 void addEdge(int u, int v)
 {
     adjMatrix[u][v] = 1; // u → v
-    adjMatrix[v][u] = 1; // v → u (undirected)
+    adjMatrix[v][u] = 1; // v → u 
 }
 ```
 
