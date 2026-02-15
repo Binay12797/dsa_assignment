@@ -67,7 +67,8 @@ The evaluator builds multi-digit numbers using the **multiply-by-10 method**:
 
 ```c
 int num = 0;
-while (isdigit(postfix[i])) {
+while (isdigit(postfix[i])) 
+{
     num = num * 10 + (postfix[i] - '0');
     i++;
 }
