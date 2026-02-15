@@ -130,8 +130,8 @@ int main()
     displayForward(head);
     displayBackward(head);
 
-    // Delete middle node (20)
-    printf("\nAfter deleting middle node (20):\n");
+    // Delete node (20)
+    printf("\nAfter deleting node (20):\n");
     deleteNode(&head, head->next);
     displayForward(head);
     displayBackward(head);
