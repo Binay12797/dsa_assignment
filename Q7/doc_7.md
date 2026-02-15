@@ -39,8 +39,8 @@ dist[src] = 0;
 
 for (int count = 0; count < vertices - 1; count++)
 {
-    int u = minDistance();   // pick closest unvisited vertex
-    visited[u] = 1;          // lock it in
+    int u = minDistance();   
+    visited[u] = 1;          
 
     for (int v = 0; v < vertices; v++)
     {
@@ -49,7 +49,7 @@ for (int count = 0; count < vertices - 1; count++)
             dist[u] != INF &&
             dist[u] + adjMatrix[u][v] < dist[v])
         {
-            dist[v] = dist[u] + adjMatrix[u][v]; // relax the edge
+            dist[v] = dist[u] + adjMatrix[u][v]; 
         }
     }
 }
