@@ -9,7 +9,8 @@
 char stack[size];
 int top = -1;
 
-void push(char a) {
+void push(char a) 
+{
     if (top == size - 1) {
         printf("Stack full");
         return;
@@ -17,7 +18,8 @@ void push(char a) {
     stack[++top] = a;
 }
 
-char pop() {
+char pop() 
+{
     if (top == -1) {
         printf("Stack Empty");
         return '\0';
@@ -33,7 +35,8 @@ int priority(char x) {
     return 0;
 }
 
-void infix_to_postfix(char infix[], char postfix[]) {
+void infix_to_postfix(char infix[], char postfix[]) 
+{
     int j = 0;
 
     for (int i = 0; infix[i] != '\0'; i++) {
@@ -71,7 +74,8 @@ void infix_to_postfix(char infix[], char postfix[]) {
 int eval_stack[size];
 int eval_top = -1;
 
-void eval_push(int val) {
+void eval_push(int val)
+{
     if (eval_top == size - 1) {
         printf("Evaluation Stack full\n");
         return;
@@ -79,7 +83,8 @@ void eval_push(int val) {
     eval_stack[++eval_top] = val;
 }
 
-int eval_pop() {
+int eval_pop() 
+{
     if (eval_top == -1) {
         printf("Evauationl Stack Empty\n");
         return -1;
@@ -88,7 +93,8 @@ int eval_pop() {
 }
 
 //to evaluate postfix
-int evaluate_postfix(char postfix[]) {
+int evaluate_postfix(char postfix[]) 
+{
     for (int i = 0; postfix[i] != '\0'; i++) {
 
         // if digit, convert char to int and push
@@ -128,7 +134,8 @@ int evaluate_postfix(char postfix[]) {
 
 
 
-int main() {
+int main() 
+{
     char infix[size];
     char postfix[size];
 
